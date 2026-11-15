@@ -1,0 +1,2081 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameArena - The Ultimate Gaming Experience</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="fixed-top bg-dark border-bottom border-secondary">
+      <div class="container px-4 py-3">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-4 gap-xl-5">
+            <a class="navbar-brand text-primary fw-bold d-flex align-items-center fs-4 m-0" href="#hero">
+              <i class="fa-solid fa-gamepad me-2 text-primary"></i>
+              <span>GameArena</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="d-none d-lg-flex align-items-center gap-4">
+              <a href="#hero" class="text-light text-decoration-none footer-hover fw-semibold">Home</a>
+              <a href="#latest-games" class="text-light text-decoration-none footer-hover fw-semibold">OUR GAMES</a>
+              <a href="#what-we-do" class="text-light text-decoration-none footer-hover fw-semibold">What We Do</a>
+              <a href="#team-members" class="text-light text-decoration-none footer-hover fw-semibold">Our Team</a>
+              <a href="#contact" class="text-light text-decoration-none footer-hover fw-semibold">Contact Us</a>
+            </nav>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <!-- Desktop Action Icons & Button -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <button class="btn btn-link text-white p-2 text-decoration-none footer-hover" type="button" aria-label="Notifications">
+                <i class="fa-regular fa-bell fs-5"></i>
+              </button>
+              <button class="btn btn-link text-white p-2 text-decoration-none footer-hover" type="button" aria-label="Messages">
+                <i class="fa-regular fa-message fs-5"></i>
+              </button>
+              <button class="btn btn-primary btn-shine px-4 py-2.5 rounded-3 fw-bold text-dark" type="button">
+                Sign In
+              </button>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button
+              class="btn text-white p-2 border-0 shadow-none d-lg-none d-flex align-items-center justify-content-center"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars fs-4 text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobileMenu" class="collapse d-lg-none bg-dark border-top border-secondary">
+        <div class="container px-4 py-4">
+          <nav class="d-flex flex-column gap-3">
+            <a href="#hero" class="mobile-nav-link" data-bs-toggle="collapse" data-bs-target="#mobileMenu">Home</a>
+            <a href="#latest-games" class="mobile-nav-link" data-bs-toggle="collapse" data-bs-target="#mobileMenu">OUR GAMES</a>
+            <a href="#what-we-do" class="mobile-nav-link" data-bs-toggle="collapse" data-bs-target="#mobileMenu">What We Do</a>
+            <a href="#team-members" class="mobile-nav-link" data-bs-toggle="collapse" data-bs-target="#mobileMenu">Our Team</a>
+            <a href="#upcoming-tournaments" class="mobile-nav-link" data-bs-toggle="collapse" data-bs-target="#mobileMenu">Tournaments</a>
+            <a href="#contact" class="mobile-nav-link" data-bs-toggle="collapse" data-bs-target="#mobileMenu">Contact Us</a>
+
+            <div class="d-flex flex-column gap-3 pt-4 border-top border-secondary">
+              <button class="btn btn-link text-light text-decoration-none p-0 d-flex align-items-center text-start mobile-action-btn" type="button">
+                <i class="fa-regular fa-bell fs-5 me-2"></i>
+                <span>Notifications</span>
+              </button>
+              <button class="btn btn-link text-light text-decoration-none p-0 d-flex align-items-center text-start mobile-action-btn" type="button">
+                <i class="fa-regular fa-message fs-5 me-2"></i>
+                <span>Messages</span>
+              </button>
+              <button class="btn btn-primary btn-shine w-100 py-3 rounded-3 fw-bold text-dark mt-2" type="button">
+                Sign In
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative z-2">
+          <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-12 col-lg-6 text-center text-lg-start">
+              <h1 class="display-5 fw-bold text-white mb-4 lh-1">
+                THE ULTIMATE
+                <span class="text-primary d-block">GAMING</span>
+                EXPERIENCE
+              </h1>
+              <p class="text-secondary mb-4 fs-6">
+                Join millions of gamers worldwide in the most competitive
+                eSports tournaments. Experience next-level gaming with
+                cutting-edge technology and endless possibilities.
+              </p>
+              <div
+                class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="#latest-games"
+                  class="btn btn-primary btn-shine px-4 px-sm-5 py-3 rounded-3 fw-bold text-dark"
+                >
+                  Start Gaming Now
+                </a>
+                <a
+                  href="#contact"
+                  class="btn btn-outline-primary btn-shine px-4 px-sm-5 py-3 rounded-3 fw-bold"
+                >
+                  Watch Tournaments
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 position-relative mt-5 mt-lg-0">
+              <div class="hero-frame rounded-4 shadow-lg overflow-hidden">
+                <img
+                  src="assets/images/hero-img.png"
+                  alt="Professional Esports Gaming Setup"
+                  class="w-100 object-fit-cover rounded-3 d-block"
+                />
+              </div>
+              <div
+                class="hero-badge bg-dark border border-secondary rounded-3 p-3 shadow-lg d-flex align-items-center gap-3"
+              >
+                <i class="fa-solid fa-trophy text-primary fs-3"></i>
+                <div>
+                  <p class="text-secondary small mb-0">Active Players</p>
+                  <p class="fw-bold fs-5 mb-0 text-white">2.5M+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Games Section -->
+      <section id="latest-games" class="py-5 bg-dark">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="section-subtitle fw-bold">OUR GAMES</p>
+            <h2 class="display-6 fw-bold text-white">Our Latest Games</h2>
+          </div>
+
+          <!-- Bootstrap Carousel for Games -->
+          <div
+            id="gamesCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1 (Games 1, 2, 3) -->
+              <div class="carousel-item active">
+                <div class="row g-4">
+                  <!-- Game 1 -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-1.png"
+                        alt="Alien Companions"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-gamepad text-primary me-1"></i
+                          >ADVENTURE
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-users text-primary me-1"></i
+                          >MULTIPLAYER
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">
+                          Alien Companions
+                        </h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+
+                  <!-- Game 2 -->
+                  <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-2.png"
+                        alt="Cyber Run 2099"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i
+                            class="fa-solid fa-flag-checkered text-primary me-1"
+                          ></i
+                          >RACING
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-bolt text-primary me-1"></i
+                          >SCI-FI
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">Cyber Run 2099</h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+
+                  <!-- Game 3 -->
+                  <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-3.png"
+                        alt="The Legend of Zelda: Tears of the Kingdom"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-dice-d20 text-primary me-1"></i
+                          >RPG
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i
+                            class="fa-solid fa-earth-americas text-primary me-1"
+                          ></i
+                          >OPEN WORLD
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">
+                          The Legend of Zelda
+                        </h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 (Games 4, 5, 6) -->
+              <div class="carousel-item">
+                <div class="row g-4">
+                  <!-- Game 4 -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-4.png"
+                        alt="Aetheria Chronicles"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i
+                            class="fa-solid fa-shield-halved text-primary me-1"
+                          ></i
+                          >RPG
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i
+                            class="fa-solid fa-crosshairs text-primary me-1"
+                          ></i
+                          >ACTION
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">
+                          Aetheria Chronicles
+                        </h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+
+                  <!-- Game 5 -->
+                  <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-5.png"
+                        alt="Warfront Protocol"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-gun text-primary me-1"></i
+                          >ACTION
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-trophy text-primary me-1"></i
+                          >COMPETITIVE
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">
+                          Warfront Protocol
+                        </h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+
+                  <!-- Game 6 -->
+                  <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-6.png"
+                        alt="Shot Striker"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i
+                            class="fa-solid fa-crosshairs text-primary me-1"
+                          ></i
+                          >ACTION
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-chess text-primary me-1"></i
+                          >STRATEGY
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">Shot Striker</h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 (Games 7, 8, 9) -->
+              <div class="carousel-item">
+                <div class="row g-4">
+                  <!-- Game 7 -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-7.png"
+                        alt="Epic Gaming League"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-trophy text-primary me-1"></i
+                          >ESPORTS
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-medal text-primary me-1"></i
+                          >TOURNAMENT
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">
+                          Epic Gaming League
+                        </h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+
+                  <!-- Game 8 -->
+                  <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-8.png"
+                        alt="Barren alien worlds"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-rocket text-primary me-1"></i
+                          >SCI-FI
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-shield text-primary me-1"></i
+                          >SURVIVAL
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">
+                          Barren Alien Worlds
+                        </h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+
+                  <!-- Game 9 -->
+                  <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                    <div
+                      class="game-card position-relative overflow-hidden rounded-4 bg-dark"
+                    >
+                      <img
+                        src="assets/images/latest-games-9.png"
+                        alt="Cloveland Quest"
+                        class="w-100 h-100 object-fit-cover d-block"
+                      />
+                      <div class="game-card-gradient"></div>
+                      <div class="game-card-tags d-flex gap-2">
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-compass text-primary me-1"></i
+                          >ADVENTURE
+                        </span>
+                        <span
+                          class="game-tag-badge rounded-pill text-white fw-bold d-inline-flex align-items-center"
+                        >
+                          <i class="fa-solid fa-map text-primary me-1"></i
+                          >EXPLORATION
+                        </span>
+                      </div>
+                      <div class="game-card-info p-4">
+                        <h3 class="h5 fw-bold text-dark m-0">
+                          Cloveland Quest
+                        </h3>
+                      </div>
+                      <div class="game-card-border rounded-4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls Centered -->
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 mt-5"
+            >
+              <button
+                class="carousel-btn"
+                type="button"
+                data-bs-target="#gamesCarousel"
+                data-bs-slide="prev"
+                aria-label="Previous Games"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button
+                class="carousel-btn"
+                type="button"
+                data-bs-target="#gamesCarousel"
+                data-bs-slide="next"
+                aria-label="Next Games"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button
+                class="btn btn-outline-primary btn-shine px-4 px-sm-5 py-3 rounded-3 fw-bold"
+                type="button"
+              >
+                VIEW ALL GAMES
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Do Section -->
+      <section id="what-we-do" class="py-5 bg-dark section-separator">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="section-subtitle fw-bold">WHAT WE DO</p>
+            <h2 class="display-6 fw-bold text-white mb-2">
+              More Than Just Games
+            </h2>
+            <p class="display-6 fw-bold text-white">
+              We Build <span class="text-primary">Interactive</span> Journeys
+            </p>
+          </div>
+
+          <div class="row row-cols-2 row-cols-lg-4 g-3 g-md-4">
+            <!-- 1: PC Game Development -->
+            <div class="col">
+              <div
+                class="what-card bg-card-alt rounded-4 p-4 d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden"
+              >
+                <div class="what-corner-tl"></div>
+                <div class="what-corner-br"></div>
+                <div
+                  class="what-icon-box bg-dark rounded-3 d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="fa-solid fa-desktop text-primary fs-3"></i>
+                </div>
+                <h3 class="h5 fw-bold text-white mb-0">
+                  PC Game<br />Development
+                </h3>
+              </div>
+            </div>
+
+            <!-- 2: Mobile Game Development -->
+            <div class="col">
+              <div
+                class="what-card bg-card-alt rounded-4 p-4 d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden"
+              >
+                <div class="what-corner-tl"></div>
+                <div class="what-corner-br"></div>
+                <div
+                  class="what-icon-box bg-dark rounded-3 d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i
+                    class="fa-solid fa-mobile-screen-button text-primary fs-3"
+                  ></i>
+                </div>
+                <h3 class="h5 fw-bold text-white mb-0">
+                  Mobile Game<br />Development
+                </h3>
+              </div>
+            </div>
+
+            <!-- 3: Image 1 -->
+            <div class="col">
+              <div
+                class="what-img-box rounded-4 overflow-hidden position-relative h-100"
+              >
+                <img
+                  src="assets/images/what-we-do-1.png"
+                  alt="Neon Green Gaming Controllers"
+                  class="w-100 h-100 object-fit-cover d-block"
+                />
+              </div>
+            </div>
+
+            <!-- 4: AR/VR Solutions -->
+            <div class="col">
+              <div
+                class="what-card bg-card-alt rounded-4 p-4 d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden"
+              >
+                <div class="what-corner-tl"></div>
+                <div class="what-corner-br"></div>
+                <div
+                  class="what-icon-box bg-dark rounded-3 d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="fa-solid fa-vr-cardboard text-primary fs-3"></i>
+                </div>
+                <h3 class="h5 fw-bold text-white mb-0">AR/VR<br />Solutions</h3>
+              </div>
+            </div>
+
+            <!-- 5: AR/VR Design -->
+            <div class="col">
+              <div
+                class="what-card bg-card-alt rounded-4 p-4 d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden"
+              >
+                <div class="what-corner-tl"></div>
+                <div class="what-corner-br"></div>
+                <div
+                  class="what-icon-box bg-dark rounded-3 d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="fa-solid fa-cubes text-primary fs-3"></i>
+                </div>
+                <h3 class="h5 fw-bold text-white mb-0">AR/VR<br />Design</h3>
+              </div>
+            </div>
+
+            <!-- 6: Image 2 -->
+            <div class="col">
+              <div
+                class="what-img-box rounded-4 overflow-hidden position-relative h-100"
+              >
+                <img
+                  src="assets/images/what-we-do-2.png"
+                  alt="3D Stylized Superhero Character"
+                  class="w-100 h-100 object-fit-cover d-block"
+                />
+              </div>
+            </div>
+
+            <!-- 7: PS4 Game Development -->
+            <div class="col">
+              <div
+                class="what-card bg-card-alt rounded-4 p-4 d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden"
+              >
+                <div class="what-corner-tl"></div>
+                <div class="what-corner-br"></div>
+                <div
+                  class="what-icon-box bg-dark rounded-3 d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="fa-brands fa-playstation text-primary fs-3"></i>
+                </div>
+                <h3 class="h5 fw-bold text-white mb-0">
+                  PS4 Game<br />Development
+                </h3>
+              </div>
+            </div>
+
+            <!-- 8: 3D Modelings -->
+            <div class="col">
+              <div
+                class="what-card bg-card-alt rounded-4 p-4 d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden"
+              >
+                <div class="what-corner-tl"></div>
+                <div class="what-corner-br"></div>
+                <div
+                  class="what-icon-box bg-dark rounded-3 d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="fa-solid fa-cube text-primary fs-3"></i>
+                </div>
+                <h3 class="h5 fw-bold text-white mb-0">3D<br />Modelings</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsors Section (Infinite Scrolling Marquee) -->
+      <section id="sponsors" class="py-5">
+        <div class="container-fluid px-0">
+          <div
+            class="sponsors-viewport position-relative overflow-hidden w-100"
+          >
+            <div class="sponsors-mask-left"></div>
+            <div class="sponsors-mask-right"></div>
+
+            <!-- Row 1: Leftward Scrolling Marquee -->
+            <div class="marquee-row scroll-left mb-3">
+              <!-- Group 1 -->
+              <div class="marquee-content">
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-1.jpg"
+                    alt="Sponsor Logo 1"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-2.jpg"
+                    alt="Sponsor Logo 2"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-3.jpg"
+                    alt="Sponsor Logo 3"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-4.jpg"
+                    alt="Sponsor Logo 4"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-5.jpg"
+                    alt="Sponsor Logo 5"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-6.jpg"
+                    alt="Sponsor Logo 6"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-7.jpg"
+                    alt="Sponsor Logo 7"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-8.jpg"
+                    alt="Sponsor Logo 8"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-9.jpg"
+                    alt="Sponsor Logo 9"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-10.jpg"
+                    alt="Sponsor Logo 10"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-11.jpg"
+                    alt="Sponsor Logo 11"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-12.jpg"
+                    alt="Sponsor Logo 12"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-1.jpg"
+                    alt="Sponsor Logo 1"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-2.jpg"
+                    alt="Sponsor Logo 2"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-3.jpg"
+                    alt="Sponsor Logo 3"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-4.jpg"
+                    alt="Sponsor Logo 4"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-5.jpg"
+                    alt="Sponsor Logo 5"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-6.jpg"
+                    alt="Sponsor Logo 6"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-7.jpg"
+                    alt="Sponsor Logo 7"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-8.jpg"
+                    alt="Sponsor Logo 8"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-9.jpg"
+                    alt="Sponsor Logo 9"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-10.jpg"
+                    alt="Sponsor Logo 10"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-11.jpg"
+                    alt="Sponsor Logo 11"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-12.jpg"
+                    alt="Sponsor Logo 12"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+              </div>
+
+              <!-- Group 2 (Duplicate for Seamless Loop) -->
+              <div class="marquee-content" aria-hidden="true">
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-1.jpg"
+                    alt="Sponsor Logo 1"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-2.jpg"
+                    alt="Sponsor Logo 2"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-3.jpg"
+                    alt="Sponsor Logo 3"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-4.jpg"
+                    alt="Sponsor Logo 4"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-5.jpg"
+                    alt="Sponsor Logo 5"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-6.jpg"
+                    alt="Sponsor Logo 6"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-7.jpg"
+                    alt="Sponsor Logo 7"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-8.jpg"
+                    alt="Sponsor Logo 8"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-9.jpg"
+                    alt="Sponsor Logo 9"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-10.jpg"
+                    alt="Sponsor Logo 10"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-11.jpg"
+                    alt="Sponsor Logo 11"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-12.jpg"
+                    alt="Sponsor Logo 12"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-1.jpg"
+                    alt="Sponsor Logo 1"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-2.jpg"
+                    alt="Sponsor Logo 2"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-3.jpg"
+                    alt="Sponsor Logo 3"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-4.jpg"
+                    alt="Sponsor Logo 4"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-5.jpg"
+                    alt="Sponsor Logo 5"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-6.jpg"
+                    alt="Sponsor Logo 6"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-7.jpg"
+                    alt="Sponsor Logo 7"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-8.jpg"
+                    alt="Sponsor Logo 8"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-9.jpg"
+                    alt="Sponsor Logo 9"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-10.jpg"
+                    alt="Sponsor Logo 10"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-11.jpg"
+                    alt="Sponsor Logo 11"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-12.jpg"
+                    alt="Sponsor Logo 12"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: Rightward Scrolling Marquee -->
+            <div class="marquee-row scroll-right">
+              <!-- Group 1 -->
+              <div class="marquee-content">
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-12.jpg"
+                    alt="Sponsor Logo 12"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-11.jpg"
+                    alt="Sponsor Logo 11"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-10.jpg"
+                    alt="Sponsor Logo 10"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-9.jpg"
+                    alt="Sponsor Logo 9"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-8.jpg"
+                    alt="Sponsor Logo 8"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-7.jpg"
+                    alt="Sponsor Logo 7"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-6.jpg"
+                    alt="Sponsor Logo 6"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-5.jpg"
+                    alt="Sponsor Logo 5"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-4.jpg"
+                    alt="Sponsor Logo 4"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-3.jpg"
+                    alt="Sponsor Logo 3"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-2.jpg"
+                    alt="Sponsor Logo 2"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-1.jpg"
+                    alt="Sponsor Logo 1"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-12.jpg"
+                    alt="Sponsor Logo 12"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-11.jpg"
+                    alt="Sponsor Logo 11"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-10.jpg"
+                    alt="Sponsor Logo 10"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-9.jpg"
+                    alt="Sponsor Logo 9"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-8.jpg"
+                    alt="Sponsor Logo 8"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-7.jpg"
+                    alt="Sponsor Logo 7"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-6.jpg"
+                    alt="Sponsor Logo 6"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-5.jpg"
+                    alt="Sponsor Logo 5"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-4.jpg"
+                    alt="Sponsor Logo 4"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-3.jpg"
+                    alt="Sponsor Logo 3"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-2.jpg"
+                    alt="Sponsor Logo 2"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-1.jpg"
+                    alt="Sponsor Logo 1"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+              </div>
+
+              <!-- Group 2 (Duplicate for Seamless Loop) -->
+              <div class="marquee-content" aria-hidden="true">
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-12.jpg"
+                    alt="Sponsor Logo 12"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-11.jpg"
+                    alt="Sponsor Logo 11"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-10.jpg"
+                    alt="Sponsor Logo 10"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-9.jpg"
+                    alt="Sponsor Logo 9"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-8.jpg"
+                    alt="Sponsor Logo 8"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-7.jpg"
+                    alt="Sponsor Logo 7"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-6.jpg"
+                    alt="Sponsor Logo 6"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-5.jpg"
+                    alt="Sponsor Logo 5"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-4.jpg"
+                    alt="Sponsor Logo 4"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-3.jpg"
+                    alt="Sponsor Logo 3"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-2.jpg"
+                    alt="Sponsor Logo 2"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-1.jpg"
+                    alt="Sponsor Logo 1"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-12.jpg"
+                    alt="Sponsor Logo 12"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-11.jpg"
+                    alt="Sponsor Logo 11"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-10.jpg"
+                    alt="Sponsor Logo 10"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-9.jpg"
+                    alt="Sponsor Logo 9"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-8.jpg"
+                    alt="Sponsor Logo 8"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-7.jpg"
+                    alt="Sponsor Logo 7"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-6.jpg"
+                    alt="Sponsor Logo 6"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-5.jpg"
+                    alt="Sponsor Logo 5"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-4.jpg"
+                    alt="Sponsor Logo 4"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-3.jpg"
+                    alt="Sponsor Logo 3"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-2.jpg"
+                    alt="Sponsor Logo 2"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="sponsor-box bg-card rounded-3 overflow-hidden">
+                  <img
+                    src="assets/images/logo-1.jpg"
+                    alt="Sponsor Logo 1"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Team Section (With Bonus Hover Effect: backdrop-filter) -->
+      <section id="team-members" class="py-5 bg-dark">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="section-subtitle fw-bold">OUR TEAM</p>
+            <h2 class="display-6 fw-bold text-white">Our Best Team Members</h2>
+            <p class="text-secondary fs-5 mt-3">
+              Meet the professional gamers and experts behind our success
+            </p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Member 1 -->
+            <div class="col">
+              <div class="team-card bg-card rounded-4 position-relative overflow-hidden">
+                <div class="team-img-wrapper position-relative overflow-hidden">
+                  <img
+                    src="assets/images/avatar-1.png"
+                    alt="Alex Phantom Chen"
+                    class="w-100 h-100 object-fit-cover d-block"
+                  />
+                  <div class="team-gradient-overlay"></div>
+                </div>
+                <div class="position-absolute bottom-0 start-0 end-0 p-4 z-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div>
+                      <h3 class="fs-5 fw-bold text-white mb-1">
+                        Alex "Phantom" Chen
+                      </h3>
+                      <p class="text-primary small fw-semibold mb-1">
+                        Pro Player - VALORANT
+                      </p>
+                      <p class="text-secondary small mb-0">World Champion 2023</p>
+                    </div>
+                    <div class="rotate-text fw-bold fs-5">PHANTOM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="col">
+              <div class="team-card bg-card rounded-4 position-relative overflow-hidden">
+                <div class="team-img-wrapper position-relative overflow-hidden">
+                  <img
+                    src="assets/images/avatar-2.png"
+                    alt="Ali Nova Ahmed"
+                    class="w-100 h-100 object-fit-cover d-block"
+                  />
+                  <div class="team-gradient-overlay"></div>
+                </div>
+                <div class="position-absolute bottom-0 start-0 end-0 p-4 z-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div>
+                      <h3 class="fs-5 fw-bold text-white mb-1">
+                        Ali "Nova" Ahmed
+                      </h3>
+                      <p class="text-primary small fw-semibold mb-1">
+                        Pro Player - League of Legends
+                      </p>
+                      <p class="text-secondary small mb-0">MVP 2023 Season</p>
+                    </div>
+                    <div class="rotate-text fw-bold fs-5">NOVA</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="col">
+              <div class="team-card bg-card rounded-4 position-relative overflow-hidden">
+                <div class="team-img-wrapper position-relative overflow-hidden">
+                  <img
+                    src="assets/images/avatar-3.png"
+                    alt="Marcus Viper Vance"
+                    class="w-100 h-100 object-fit-cover d-block"
+                  />
+                  <div class="team-gradient-overlay"></div>
+                </div>
+                <div class="position-absolute bottom-0 start-0 end-0 p-4 z-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div>
+                      <h3 class="fs-5 fw-bold text-white mb-1">
+                        Marcus "Viper" Vance
+                      </h3>
+                      <p class="text-primary small fw-semibold mb-1">
+                        Head Coach - CS:GO
+                      </p>
+                      <p class="text-secondary small mb-0">5x Major Winner</p>
+                    </div>
+                    <div class="rotate-text fw-bold fs-5">VIPER</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="col">
+              <div class="team-card bg-card rounded-4 position-relative overflow-hidden">
+                <div class="team-img-wrapper position-relative overflow-hidden">
+                  <img
+                    src="assets/images/avatar-4.png"
+                    alt="Sarah Zero Connor"
+                    class="w-100 h-100 object-fit-cover d-block"
+                  />
+                  <div class="team-gradient-overlay"></div>
+                </div>
+                <div class="position-absolute bottom-0 start-0 end-0 p-4 z-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div>
+                      <h3 class="fs-5 fw-bold text-white mb-1">
+                        Sarah "Zero" Connor
+                      </h3>
+                      <p class="text-primary small fw-semibold mb-1">
+                        Strategic Analyst
+                      </p>
+                      <p class="text-secondary small mb-0">Data Science Expert</p>
+                    </div>
+                    <div class="rotate-text fw-bold fs-5">ZERO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="col">
+              <div class="team-card bg-card rounded-4 position-relative overflow-hidden">
+                <div class="team-img-wrapper position-relative overflow-hidden">
+                  <img
+                    src="assets/images/avatar-5.png"
+                    alt="Jake Storm Wilson"
+                    class="w-100 h-100 object-fit-cover d-block"
+                  />
+                  <div class="team-gradient-overlay"></div>
+                </div>
+                <div class="position-absolute bottom-0 start-0 end-0 p-4 z-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div>
+                      <h3 class="fs-5 fw-bold text-white mb-1">
+                        Jake "Storm" Wilson
+                      </h3>
+                      <p class="text-primary small fw-semibold mb-1">
+                        Pro Player - Apex Legends
+                      </p>
+                      <p class="text-secondary small mb-0">Rising Star 2023</p>
+                    </div>
+                    <div class="rotate-text fw-bold fs-5">STORM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 6 -->
+            <div class="col">
+              <div class="team-card bg-card rounded-4 position-relative overflow-hidden">
+                <div class="team-img-wrapper position-relative overflow-hidden">
+                  <img
+                    src="assets/images/avatar-6.png"
+                    alt="David Titan Park"
+                    class="w-100 h-100 object-fit-cover d-block"
+                  />
+                  <div class="team-gradient-overlay"></div>
+                </div>
+                <div class="position-absolute bottom-0 start-0 end-0 p-4 z-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div>
+                      <h3 class="fs-5 fw-bold text-white mb-1">
+                        David "Titan" Park
+                      </h3>
+                      <p class="text-primary small fw-semibold mb-1">
+                        Team Captain - Dota 2
+                      </p>
+                      <p class="text-secondary small mb-0">
+                        The International Winner
+                      </p>
+                    </div>
+                    <div class="rotate-text fw-bold fs-5">TITAN</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 7 -->
+            <div class="col">
+              <div class="team-card bg-card rounded-4 position-relative overflow-hidden">
+                <div class="team-img-wrapper position-relative overflow-hidden">
+                  <img
+                    src="assets/images/avatar-7.png"
+                    alt="Khaled Phoenix Ali"
+                    class="w-100 h-100 object-fit-cover d-block"
+                  />
+                  <div class="team-gradient-overlay"></div>
+                </div>
+                <div class="position-absolute bottom-0 start-0 end-0 p-4 z-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div>
+                      <h3 class="fs-5 fw-bold text-white mb-1">
+                        Khaled "Phoenix" Ali
+                      </h3>
+                      <p class="text-primary small fw-semibold mb-1">
+                        Content Creator
+                      </p>
+                      <p class="text-secondary small mb-0">2M+ Followers</p>
+                    </div>
+                    <div class="rotate-text fw-bold fs-5">PHOENIX</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 8 -->
+            <div class="col">
+              <div class="team-card bg-card rounded-4 position-relative overflow-hidden">
+                <div class="team-img-wrapper position-relative overflow-hidden">
+                  <img
+                    src="assets/images/avatar-8.png"
+                    alt="Ryan Ghost Miller"
+                    class="w-100 h-100 object-fit-cover d-block"
+                  />
+                  <div class="team-gradient-overlay"></div>
+                </div>
+                <div class="position-absolute bottom-0 start-0 end-0 p-4 z-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div>
+                      <h3 class="fs-5 fw-bold text-white mb-1">
+                        Ryan "Ghost" Miller
+                      </h3>
+                      <p class="text-primary small fw-semibold mb-1">
+                        Team Manager
+                      </p>
+                      <p class="text-secondary small mb-0">Operations Lead</p>
+                    </div>
+                    <div class="rotate-text fw-bold fs-5">GHOST</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section id="contact" class="py-5 bg-dark">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="section-subtitle fw-bold">CONTACT US</p>
+            <h2 class="display-6 fw-bold text-white">Get In Touch</h2>
+            <p class="text-secondary fs-5 mt-3">
+              Have questions or need support? We're here to help!
+            </p>
+          </div>
+
+          <div class="row g-4 g-lg-5">
+            <!-- Left: Info Cards & Community -->
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column gap-4">
+                <!-- Location -->
+                <div
+                  class="bg-card rounded-4 p-4 d-flex align-items-center gap-4"
+                >
+                  <div
+                    class="contact-icon rounded-circle bg-primary text-dark d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h3 class="fs-5 fw-bold text-white mb-1">Our Location</h3>
+                    <p class="text-secondary mb-0">
+                      123 Gaming Street, Esports City, EC 12345
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div
+                  class="bg-card rounded-4 p-4 d-flex align-items-center gap-4"
+                >
+                  <div
+                    class="contact-icon rounded-circle bg-primary text-dark d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <h3 class="fs-5 fw-bold text-white mb-1">Phone Number</h3>
+                    <p class="text-secondary mb-0">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div
+                  class="bg-card rounded-4 p-4 d-flex align-items-center gap-4"
+                >
+                  <div
+                    class="contact-icon rounded-circle bg-primary text-dark d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h3 class="fs-5 fw-bold text-white mb-1">Email Address</h3>
+                    <p class="text-secondary mb-0">contact@gamearena.com</p>
+                  </div>
+                </div>
+
+                <!-- Community Banner -->
+                <div class="community-banner rounded-4 p-4 p-md-5 text-dark">
+                  <h3 class="fs-4 fw-bold text-dark mb-2">
+                    Join Our Community
+                  </h3>
+                  <p class="text-dark mb-4">
+                    Connect with us on social media for the latest updates
+                  </p>
+                  <div class="d-flex gap-3">
+                    <a
+                      href="https://discord.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="contact-social-btn rounded-circle text-decoration-none"
+                      aria-label="Discord"
+                    >
+                      <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a
+                      href="https://x.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="contact-social-btn rounded-circle text-decoration-none"
+                      aria-label="X Twitter"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="contact-social-btn rounded-circle text-decoration-none"
+                      aria-label="Instagram"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="contact-social-btn rounded-circle text-decoration-none"
+                      aria-label="YouTube"
+                    >
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="col-12 col-lg-6">
+              <div class="bg-card rounded-4 p-4 p-md-5">
+                <h3 class="fs-4 fw-bold text-white mb-4">Send us a Message</h3>
+                <form class="d-flex flex-column gap-4">
+                  <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                      <label class="form-label text-light fw-bold small mb-2">
+                        First Name
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control contact-input"
+                        placeholder="Your first name"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label text-light fw-bold small mb-2">
+                        Last Name
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control contact-input"
+                        placeholder="Your last name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="form-label text-light fw-bold small mb-2">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control contact-input"
+                      placeholder="your.email@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label class="form-label text-light fw-bold small mb-2">
+                      Subject
+                    </label>
+                    <select class="form-select contact-input">
+                      <option>General Inquiry</option>
+                      <option>Tournament Support</option>
+                      <option>Technical Issue</option>
+                      <option>Partnership</option>
+                      <option>Media Request</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label class="form-label text-light fw-bold small mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      rows="4"
+                      class="form-control contact-input resize-none"
+                      placeholder="Tell us how we can help you..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="form-check d-flex align-items-center gap-2">
+                    <input
+                      class="form-check-input mt-0"
+                      type="checkbox"
+                      id="newsletter"
+                    />
+                    <label
+                      class="form-check-label text-secondary small"
+                      for="newsletter"
+                    >
+                      Subscribe to our newsletter for gaming updates
+                    </label>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-shine w-100 py-3 rounded-3 fw-bold fs-5 text-dark"
+                  >
+                    Send Message
+                    <i class="fa-solid fa-paper-plane ms-2"></i>
+                  </button>
+                </form>
+
+                <!-- Support Badges -->
+                <div class="mt-4 pt-4 border-top border-secondary">
+                  <div class="row text-center g-3">
+                    <div class="col-6">
+                      <div class="fs-3 fw-bold text-primary mb-1">24/7</div>
+                      <div class="text-secondary small">Support Available</div>
+                    </div>
+                    <div class="col-6">
+                      <div class="fs-3 fw-bold text-primary mb-1">&lt;1hr</div>
+                      <div class="text-secondary small">Average Response</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="py-5 bg-black border-top border-secondary">
+      <div class="container py-4">
+        <div class="row g-4 g-lg-5 mb-5">
+          <!-- Col 1: Brand & Socials -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="text-primary fs-4 fw-bold mb-3 d-flex align-items-center"
+            >
+              <i class="fa-solid fa-gamepad me-2 text-primary"></i>
+              <span>GameArena</span>
+            </div>
+            <p class="text-secondary small mb-4">
+              The ultimate destination for competitive gaming, esports
+              tournaments, and gaming community.
+            </p>
+            <div class="d-flex gap-3">
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-secondary fs-5 footer-hover text-decoration-none"
+                aria-label="X Twitter"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-secondary fs-5 footer-hover text-decoration-none"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-secondary fs-5 footer-hover text-decoration-none"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-secondary fs-5 footer-hover text-decoration-none"
+                aria-label="YouTube"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://twitch.tv"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-secondary fs-5 footer-hover text-decoration-none"
+                aria-label="Twitch"
+              >
+                <i class="fa-brands fa-twitch"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2: Games -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white fs-5 fw-bold mb-3">Games</h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0 small">
+              <li>
+                <a
+                  href="#latest-games"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >VALORANT</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#latest-games"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >League of Legends</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#latest-games"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >CS:GO</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#latest-games"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Dota 2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#latest-games"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Apex Legends</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Tournaments -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white fs-5 fw-bold mb-3">Tournaments</h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0 small">
+              <li>
+                <a
+                  href="#hero"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Upcoming Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#hero"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Live Matches</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#hero"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Results</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#hero"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Rankings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#hero"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Schedule</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Support -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white fs-5 fw-bold mb-3">Support</h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0 small">
+              <li>
+                <a
+                  href="#contact"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Bug Reports</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Feature Requests</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-secondary footer-hover text-decoration-none"
+                  >Community Guidelines</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-top border-secondary pt-4">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+          >
+            <p class="text-secondary small mb-0">
+              &copy; 2025 GameArena. All rights reserved.
+            </p>
+            <div class="d-flex gap-4">
+              <a
+                href="#hero"
+                class="text-secondary footer-hover text-decoration-none small"
+                >Privacy Policy</a
+              >
+              <a
+                href="#hero"
+                class="text-secondary footer-hover text-decoration-none small"
+                >Terms of Service</a
+              >
+              <a
+                href="#hero"
+                class="text-secondary footer-hover text-decoration-none small"
+                >Cookie Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

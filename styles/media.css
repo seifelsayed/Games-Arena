@@ -1,0 +1,31 @@
+/* Media Queries */
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 82%;
+    scroll-padding-top: 85px;
+  }
+
+  #hero {
+    background-attachment: scroll !important;
+    padding-top: 90px;
+  }
+
+  .hero-badge {
+    bottom: -0.75rem;
+    left: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-subtitle::before {
+    left: -35px;
+    width: 25px;
+  }
+
+  .section-subtitle::after {
+    right: -35px;
+    width: 25px;
+  }
+}
